@@ -1,0 +1,101 @@
+body{
+background: url(../imagens/fundo.jpg);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+Header{
+    background:rgb(178, 45, 0); /* site:960 dimensão basica - https://960.gs/ */
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.telefone{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    right: 0;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 16px;
+}
+
+nav{
+    width: 960px;
+    margin: 0 auto;
+    background: #d9a300;
+    box-sizing: border-box;
+    padding: 15px 35px;
+
+}
+.menu-navegacao li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu-navegacao li a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+.menu-navegacao li a:hover{
+    text-decoration: underline;
+}
+
+main{
+    box-sizing: border-box;
+    width: 960px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px 25px 30px 25px;
+}
+
+.titulo-principal{
+    font-size: 40px;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.pizzas-banner li{
+    display: inline-block;
+    text-align: center;
+
+}
+
+.pizzas-banner li figcaption{
+    margin-top: 10px;
+}
+
+
+.pizzas-banner{
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.nossos-sabores, .historia{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 45%;
+    vertical-align: top;
+
+}
+.subtitulo-principal{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.lista-sabores{
+    column-count: 3;
+
+}
+.imagem-historia{
+    margin-right: 10px;
+    color: red;
+}
