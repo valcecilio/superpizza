@@ -132,6 +132,56 @@
             font-size: 12px;
             
         }
+
+        label{
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        #nome, #email{
+            padding; 5px;
+            width: 300px;
+        }
+
+        #mensagem{
+            padding: 5px;
+            width: 500px;
+            display: block;
+            height: 100px;
+            margin-bottom: 14px;
+        }
+
+        button{
+            padding: 5px 10px;
+            background: gray;
+            color: white;
+            border: 0;
+        }
+
+        .coluna-mapa{
+            box-sizing: border-box;
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .coluna-mapa p{
+            font-size: 15px;
+        }
+        
+        .coluna-formulario{
+            box-sizing: border-box;
+            width: 605px;
+            display: inline-block;
+        }
+        .destaque-mapa{
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            display: block;
+            font-weight: bold;
+        }
     
     </style>
 	<body>
@@ -147,62 +197,41 @@
             </ul>
         </nav>
         <main>
-            <h3 class="titulo-principal">A melhor pizza da região</h3>
-            <ul class="pizzas-banner">
-                <li>
-                    <figure>
-                        <img src="imagens/calabreza.jpg" alt="Calabreza">
-                        <figcaption> Calabreza</figcaption>
-                    </figure>
-                </li>
+            <h3 class="titulo-principal">Entre em contato</h3>
+            <div class='coluna-formulario'>
+                <h4 class="subtitulo-principal"> Envie uma mensagem</h4>
+                <p>Utilize o formulário de contato para enviar sua mensagem</p>
+            <form name="formulario-contato"
+                action="enviar-email.php"  method="POST">
+                <label for="nome">Nome</label>
+                <input id="nome">
 
-                <li>
-                    <figure>
-                        <img src="imagens/portuguesa.jpg" alt="Portuguesa">
-                        <figcaption> Portuguesa</figcaption>
-                    </figure>
-                </li>
+                <label for="email">Email</label>
+                <input id="email">
 
-                <li>
-                    <figure>
-                        <img src="imagens/siciliana.jpg" alt="Siciliana">
-                        <figcaption> Siciliana</figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <div class="nossos-sabores">
-                <h4 class="subtitulo-principal"> Nossos Sabores </h4>
-                <ul class="lista-sabores">
-                    <li>À moda da casa</li>
-                    <li>Alice</li>
-                    <li>Atum</li>
-                    <li>Baiana</li>
-                    <li>Bauru</li>
-                    <li>Canadense</li>
-                    <li>Catupiri</li>
-                    <li>Calabreza</li>
-                    <li>Escarola</li>
-                    <li>Frango</li>
-                    <li>Margherita</li>
-                    <li>Mexicana</li>
-                    <li>Mussarela</li>
-                    <li>Napolitana</li>
-                    <li>Palmito</li>
-                    <li>Portuguesa</li>
-                    <li>Provolone</li>
-                    <li>Quatro Queijo</li>
-                    <li>Romana</li>
-                    <li>Siciliana</li>
-                </ul>
+                <label for="mensagem">Mensagem</label>
+
+                <textarea id="mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+
+
+
+                </form>
             </div>
-            <div class="historia">
-                    <h4 class="subtitulo-principal">Uma casa com história </h4>
-                <p>
-                    <img src="imagens/historia.jpg" alt="História" align="left" class="imagem-historia">
-                    Muito famosa em toda em toda região por sua excelência na qualidade, 
-					a nossa pzzaria tem mais de 25 anos de história.
-                
-                <a href="sobre.html"> Conheça</a>.</p>                
+            <div class='coluna-mapa'>
+                <!-- Início do mapa -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.327692345659!2d-47.33132728488835!3d-22.753217138129834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8998174c896b9%3A0x739b7f99b3323574!2sSenac%20Americana!5e0!3m2!1spt-BR!2sbr!4v1573513978569!5m2!1spt-BR!2sbr" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <!-- Fim do mapa -->
+                <strong class="destaque-mapa">Endereço</strong>
+                <p>Rua Teste, 123 - Bairro Sede - Americana - SP</p>
+
+                <strong class="destaque-mapa">Email</strong>
+                <p>contato@supeerpizza.com.br</p>
+
+                <strong class="destaque-mapa"> Telefone</strong>
+                <p>(019) 1234-5678</p>
+
             </div>
         </main>
         <footer>

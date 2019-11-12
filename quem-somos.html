@@ -37,6 +37,7 @@
             margin-top: 16px;
         }
         
+        
         nav{
             width: 960px;
             margin: 0 auto;
@@ -107,9 +108,14 @@
             font-size: 35px;
             margin-bottom: 20px;
         }
+
+        .subtitulo-secundario{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
         
         .lista-sabores{
-            column-count: 3;        
+            column-count: 3;           
         }
 
         .lista-sabores li{
@@ -119,6 +125,25 @@
         .imagem-historia{
             margin-right: 10px;
             color: red;
+        }
+
+        .nossa-hist, .galeria, .missao-visao, .valores{
+            display: inline-block;
+            box-sizing: border-box;
+            width:46%;
+            vertical-align: top;  
+            margin-bottom: 20px;
+            margin-right: 30px;
+        }
+        
+        .nossa-hist p, .galeria p, .missao-visao p, .valores p{
+            margin-bottom: 20px;
+        }
+        .foto-galeria{
+            display: inline-block;
+            box-sizing: border-box;
+            margin-right: 15px;
+            margin-bottom: 15px;
         }
 
         footer{
@@ -132,6 +157,7 @@
             font-size: 12px;
             
         }
+
     
     </style>
 	<body>
@@ -147,66 +173,53 @@
             </ul>
         </nav>
         <main>
-            <h3 class="titulo-principal">A melhor pizza da região</h3>
-            <ul class="pizzas-banner">
-                <li>
-                    <figure>
-                        <img src="imagens/calabreza.jpg" alt="Calabreza">
-                        <figcaption> Calabreza</figcaption>
-                    </figure>
-                </li>
+            <h3 class="titulo-principal">Quem somos</h3>
 
-                <li>
-                    <figure>
-                        <img src="imagens/portuguesa.jpg" alt="Portuguesa">
-                        <figcaption> Portuguesa</figcaption>
-                    </figure>
-                </li>
+                <div class="nossa-hist">
+                    <h5 class="subtitulo-secundario"> Nossa história </h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="galeria">
+                    <h5 class="subtitulo-secundario"> Galeria </h5>
+                    <div class="foto-galeria"> 
+                        <img src="imagens/siciliana.jpg" alt="Calabreza" width="120px" height="100px">
+                    </div>
+                    <div class="foto-galeria"> 
+                        <img src="imagens/calabreza.jpg" alt="Calabreza" width="120px" height="100px">
+                    </div>
+                    <div class="foto-galeria"> 
+                        <img src="imagens/siciliana.jpg" alt="Calabreza" width="120px" height="100px">
+                   </div>
+                   <div class="foto-galeria"> 
+                        <img src="imagens/portuguesa.jpg" alt="Calabreza" width="120px" height="100px">
+                   </div>
+                   <div class="foto-galeria">
+                        <img src="imagens/portuguesa.jpg" alt="Calabreza" width="120px" height="100px">
+                   </div>
+                   <div class="foto-galeria"> 
+                        <img src="imagens/portuguesa.jpg" alt="Calabreza" width="120px" height="100px">
+                   </div>
+                </div>
 
-                <li>
-                    <figure>
-                        <img src="imagens/siciliana.jpg" alt="Siciliana">
-                        <figcaption> Siciliana</figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <div class="nossos-sabores">
-                <h4 class="subtitulo-principal"> Nossos Sabores </h4>
-                <ul class="lista-sabores">
-                    <li>À moda da casa</li>
-                    <li>Alice</li>
-                    <li>Atum</li>
-                    <li>Baiana</li>
-                    <li>Bauru</li>
-                    <li>Canadense</li>
-                    <li>Catupiri</li>
-                    <li>Calabreza</li>
-                    <li>Escarola</li>
-                    <li>Frango</li>
-                    <li>Margherita</li>
-                    <li>Mexicana</li>
-                    <li>Mussarela</li>
-                    <li>Napolitana</li>
-                    <li>Palmito</li>
-                    <li>Portuguesa</li>
-                    <li>Provolone</li>
-                    <li>Quatro Queijo</li>
-                    <li>Romana</li>
-                    <li>Siciliana</li>
-                </ul>
-            </div>
-            <div class="historia">
-                    <h4 class="subtitulo-principal">Uma casa com história </h4>
-                <p>
-                    <img src="imagens/historia.jpg" alt="História" align="left" class="imagem-historia">
-                    Muito famosa em toda em toda região por sua excelência na qualidade, 
-					a nossa pzzaria tem mais de 25 anos de história.
-                
-                <a href="sobre.html"> Conheça</a>.</p>                
-            </div>
+                <div class="missao-visao">
+                    <h5 class="subtitulo-secundario"> Missão & Visão </h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="valores">
+                    <h5 class="subtitulo-secundario"> Valores </h5>
+                        <ul class="lista-valores">
+                            <li>- Transparência</li>
+                            <li>- Fidelidade</li>
+                            <li>- Qualidade</li>
+                            <li>- Rapidez</li>
+                        </ul>
+                </div> 
         </main>
         <footer>
-            <p>Aula do SENAC. Declaração dos direitos autorais.</p>
-    </footer>
+                <p>Aula do SENAC. Declaração dos direitos autorais.</p>
+        </footer>
+        
 	</body>
 </html>
